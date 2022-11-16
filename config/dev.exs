@@ -16,7 +16,8 @@ config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
   secret_key_base: "NmZ1rx4z3Bk26uhbBMIqH788DmJ1iuPfyjATXj1NV0rcTSI/pG1yB1bvyApzCV4y",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+    storybook_tailwind: {Tailwind, :install_and_run, [:storybook, ~w(--watch)]}
   ]
 
 # ## SSL Support
@@ -48,7 +49,8 @@ config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"lib/core_component_stories_web/(live|views)/.*(ex)$",
-      ~r"lib/core_component_stories_web/templates/.*(eex)$"
+      ~r"lib/core_component_stories_web/templates/.*(eex)$",
+      ~r"storybook/.*(exs)$"
     ]
   ]
 
