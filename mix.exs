@@ -33,10 +33,10 @@ defmodule CoreComponentStories.MixProject do
   defp deps do
     [
       {:phx_live_storybook, path: "../phx_live_storybook", override: true},
-      {:phoenix, "~> 1.7.0-rc.0", override: true},
+      {:phoenix, "~> 1.7.0-rc.1", override: true},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.18.3"},
+      {:phoenix_live_view, "~> 0.18.4"},
       {:heroicons, "~> 0.5"},
       {:floki, ">= 0.30.0", only: :test},
       {:esbuild, "~> 0.5", runtime: Mix.env() == :dev},
