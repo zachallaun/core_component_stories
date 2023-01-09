@@ -13,7 +13,7 @@ config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "NmZ1rx4z3Bk26uhbBMIqH788DmJ1iuPfyjATXj1NV0rcTSI/pG1yB1bvyApzCV4y",
+  secret_key_base: "A/leHk1Zb7ywzbNwu2Czp25ieD6ovQvtd2yV4HjTpisr0yTOVltMN82pwgiklyHp",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
@@ -48,8 +48,8 @@ config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"lib/core_component_stories_web/(live|views)/.*(ex)$",
-      ~r"lib/core_component_stories_web/templates/.*(eex)$",
+      ~r"priv/gettext/.*(po)$",
+      ~r"lib/core_component_stories_web/(controllers|live|components)/.*(ex|heex)$",
       ~r"storybook/.*(exs)$"
     ]
   ]

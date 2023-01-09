@@ -39,11 +39,11 @@ defmodule CoreComponentStoriesWeb do
   def controller do
     quote do
       use Phoenix.Controller,
-        namespace: CoreComponentStoriesWeb,
         formats: [:html, :json],
         layouts: [html: CoreComponentStoriesWeb.Layouts]
 
       import Plug.Conn
+      import CoreComponentStoriesWeb.Gettext
 
       unquote(verified_routes())
     end
@@ -85,6 +85,7 @@ defmodule CoreComponentStoriesWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import CoreComponentStoriesWeb.CoreComponents
+      import CoreComponentStoriesWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

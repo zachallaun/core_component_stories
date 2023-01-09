@@ -7,7 +7,7 @@ defmodule CoreComponentStoriesWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_core_component_stories_key",
-    signing_salt: "MFQdJm6U",
+    signing_salt: "nQnvAUm6",
     same_site: "Lax"
   ]
 
@@ -30,6 +30,10 @@ defmodule CoreComponentStoriesWeb.Endpoint do
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
+
+  plug Phoenix.LiveDashboard.RequestLogger,
+    param_key: "request_logger",
+    cookie_key: "request_logger"
 
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]

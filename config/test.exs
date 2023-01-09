@@ -4,7 +4,7 @@ import Config
 # you can enable the server option below.
 config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "1WszuKRz0hQLevzS+HpQK1c+IFUcGuANkRboE2xltSjRhosDooYw27jNLR/pb+Qs",
+  secret_key_base: "nRaK7jQ25Chz+rj8OdkMyP4ndyI2KWjk+SiQoS8ddG2PRV4jLt4jIY7wnAaFiD9g",
   server: false
 
 # Print only warnings and errors during test

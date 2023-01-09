@@ -15,7 +15,7 @@ config :core_component_stories, CoreComponentStoriesWeb.Endpoint,
     layout: false
   ],
   pubsub_server: CoreComponentStories.PubSub,
-  live_view: [signing_salt: "zW2DMtjF"]
+  live_view: [signing_salt: "CcafYKiM"]
 
 # Configure esbuild (the version is required)
 config :esbuild,
@@ -29,7 +29,7 @@ config :esbuild,
 
 # Configure tailwind (the version is required)
 config :tailwind,
-  version: "3.1.8",
+  version: "3.2.4",
   default: [
     args: ~w(
       --config=tailwind.config.js
